@@ -20,7 +20,7 @@ Follow these steps to set up the project on your local machine:
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/your-repo/project-name.git
+    git clone https://github.com/surenderdev/Airflow_Flipkart_MLbookspipeline.git
     ```
 2. Navigate to the project directory:
     ```bash
