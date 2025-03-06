@@ -15,7 +15,7 @@ Airflow DAG performs the following tasks:
 ---
 
 <p align="center">
-  <img src="Airflow_Flipkart_DAG.jpg" width="400" title="DAG Screenshot">
+  <img src="Airflow_Flipkart_DAG.jpg" width="400" title="Airflow DAG Screenshot">
   <img src="/Airflow_Flipkart_Postgresdb.jpg" width="400" title="Postgres Admin-Database Screenshot" alt="accessibility text">
 </p>
 
