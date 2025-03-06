@@ -24,7 +24,7 @@ Follow these steps to set up the project on your local machine:
     ```
 2. Navigate to the project directory:
     ```bash
-    cd project-name
+    cd Airflow_Flipkart_MLbookspipeline
     ```
 3. Build and start the services using Docker Compose:
     ```bash
