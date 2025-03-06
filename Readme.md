@@ -48,9 +48,9 @@ Follow these steps to set up the project on your local machine:
 - Create a new server and configure it:
   - **Name**: `mlbooks_server`
   - **Hostname**: `172.18.0.3`  
-    *(Get this from Docker container inspection: `docker container inspect <postgres-container>`)*
-    *(you may as well use Docker Destop, check containers "flipkart_booksdb-postgres-1", 
-      "postgres:13" served on port"5432:5432",  inspect tab and check for IP address)
+    *(Get this from Docker container inspection: `docker container inspect <postgres-container>` \
+      you may as well use Docker Desktop, check container "flipkart_booksdb-postgres-1", 
+      "postgres:13" served on port"5432:5432", Go to its inspect tab and check for IP address)*
   - **Port**: `5432`
   - **Database**: `postgres`
   - **Username**: `airflow`
