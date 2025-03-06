@@ -1,5 +1,4 @@
-# Airflow_Experiments
-# Machine Learning Books Data Pipeline
+# Machine Learning Books Data Pipeline with Airflow
 
 This is a good starting point for learning to orchestrate data pipelines with Airflow. 
 (fetch real data from a e-commerce websites; store it in db and update the db at scheduled intervals)
@@ -8,16 +7,10 @@ Intension is to fetch "Machine Learning Books" details from Flipkart and store t
 This same template can be generalised for wider applications.
 
 ## Purpose
-DAG performs the following tasks:
+Airflow DAG performs the following tasks:
 1. Fetches details of machine learning books (Title, Price, Author) from Flipkart.
 2. Creates a table in a PostgreSQL database.
 3. Inserts the fetched data into the database along with timestamp.
-
----
-# Project Title
-
-**A brief, catchy description of what the project does.**  
-*(Example: "An Airflow DAG for scraping book data from Flipkart and storing it in PostgreSQL.")*
 
 ---
 
