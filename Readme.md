@@ -21,47 +21,7 @@ DAG performs the following tasks:
 
 ---
 
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Prerequisites](#prerequisites)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Configuration](#configuration)
-7. [Contributing](#contributing)
-8. [License](#license)
-
----
-
-## Introduction
-
-**What is this project about?**
-Provide a high-level overview of your project, its purpose, and what problem it solves.  
-*(Example: "This project automates the scraping of book data related to machine learning from Flipkart and stores it in a PostgreSQL database for analytics.")*
-
----
-
-## Features
-
-- **Key Feature 1**: Brief description.
-- **Key Feature 2**: Brief description.
-- **Key Feature 3**: Brief description.
-
-*(Example: "Scrapes book titles, prices, and author information; integrates with PostgreSQL for database storage; scheduled with Airflow for periodic updates.")*
-
----
-
-## Prerequisites
-
-Before you begin, ensure you have the following installed:
-- **Docker** (version X.X or higher)
-- **Python** (version X.X or higher, if running locally)
-- **PostgreSQL** (if not using Docker)
-
----
-
-## Installation
+## Instructions
 
 Follow these steps to set up the project on your local machine:
 
@@ -79,8 +39,6 @@ Follow these steps to set up the project on your local machine:
     ```
 
 ---
-
-## Usage
 
 ### Running the Project
 1. Access the **Airflow Webserver** at: [http://localhost:8080](http://localhost:8080)  
@@ -105,7 +63,7 @@ Follow these steps to set up the project on your local machine:
   - **Username**: `airflow`
   - **Password**: `airflow`
 
-- Create a new database: `mlbooks`
+- Rightclick on mlbooks_server to Create a new database: `mlbooks`
 
 ---
 
@@ -130,7 +88,7 @@ Follow these steps to set up the project on your local machine:
 
 ---
 
-## Core Components
+## Core Components of DAG [dags/buildmlbooks.py]
 
 ### **1. Python Functions**
 
