@@ -1,4 +1,4 @@
-# Machine Learning Books Data Pipeline with Airflow
+# Machine Learning Books Database Pipeline with Airflow
 
 This is a good starting point for learning to orchestrate data pipelines with Airflow. 
 (fetch real data from a e-commerce websites; store it in db and update the db at scheduled intervals)
