@@ -1,0 +1,104 @@
+[2025-03-06T06:26:02.833+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-06T06:26:02.852+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mlbooksdb_flipkart.insert_book_data manual__2025-03-06T06:08:04.475799+00:00 [queued]>
+[2025-03-06T06:26:02.861+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mlbooksdb_flipkart.insert_book_data manual__2025-03-06T06:08:04.475799+00:00 [queued]>
+[2025-03-06T06:26:02.862+0000] {taskinstance.py:2867} INFO - Starting attempt 3 of 4
+[2025-03-06T06:26:02.874+0000] {taskinstance.py:2890} INFO - Executing <Task(SQLExecuteQueryOperator): insert_book_data> on 2025-03-06 06:08:04.475799+00:00
+[2025-03-06T06:26:02.882+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=951) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-06T06:26:02.884+0000] {standard_task_runner.py:72} INFO - Started process 953 to run task
+[2025-03-06T06:26:02.884+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'mlbooksdb_flipkart', 'insert_book_data', 'manual__2025-03-06T06:08:04.475799+00:00', '--job-id', '37', '--raw', '--subdir', 'DAGS_FOLDER/buildmlbooksdb.py', '--cfg-path', '/tmp/tmpzoblj4jx']
+[2025-03-06T06:26:02.885+0000] {standard_task_runner.py:105} INFO - Job 37: Subtask insert_book_data
+[2025-03-06T06:26:02.931+0000] {task_command.py:467} INFO - Running <TaskInstance: mlbooksdb_flipkart.insert_book_data manual__2025-03-06T06:08:04.475799+00:00 [running]> on host 3f07eaa845dd
+[2025-03-06T06:26:02.992+0000] {logging_mixin.py:190} INFO - fetched records: [{'Title': 'Machine Learning Using Python', 'Price': '₹599', 'Author': 'English, Paperback, Pradhan Manaranjan'}, {'Title': 'Real-World Machine Learning: 2017', 'Price': '₹736', 'Author': 'English, Paperback, unknown'}, {'Title': 'AI and Machine Learning', 'Price': '₹3,726', 'Author': 'English, Paperback, Rahman Was'}, {'Title': 'Image and Graphics Technologies and Applications', 'Price': '₹3,863', 'Author': 'English, Paperback, unknown'}, {'Title': 'Mathematics for Machine Learning', 'Price': '₹787', 'Author': 'English, Paperback, Deisenroth Marc Peter'}, {'Title': 'MACHINE LEARNING - VEI (Special Edition)  - Machine Lea...', 'Price': '₹221', 'Author': 'Paperback, Justin Hanson'}, {'Title': 'Building Transformer Models with PyTorch 2.0', 'Price': '₹678', 'Author': 'English, Paperback, Timsina Prem'}, {'Title': 'Deep Learning  - Deep Learning', 'Price': '₹5,102', 'Author': 'English, Hardcover, Goodfellow Ian'}, {'Title': 'Deep Learning', 'Price': '₹1,811', 'Author': 'English, Hardcover, Bishop Christopher M.'}, {'Title': 'Deep Learning with Python', 'Price': '₹3,490', 'Author': 'English, Paperback, Chollet Francois'}, {'Title': 'Machine Learning for Absolute Beginners: A Plain Englis...', 'Price': '₹441', 'Author': 'Hardcover, Oliver Theobald'}, {'Title': 'Designing Machine Learning Systems: An Iterative Proces...', 'Price': '₹1,346', 'Author': 'Paperback, Chip Huyen'}, {'Title': 'Machine Learning 1 Edition', 'Price': '₹500', 'Author': 'English, Paperback, Srinivasaraghavan Anuradha'}, {'Title': 'Machine Learning for Email: Spam Filtering and Priority...', 'Price': '₹550', 'Author': 'English, Paperback, Drew Conway , John Myles White'}, {'Title': 'ADVANCED MACHINE LEARNING', 'Price': '₹243', 'Author': 'English, Paperback, Dr. R Kumar'}, {'Title': 'Advanced Machine Learning Techniques', 'Price': '₹230', 'Author': 'English, Paperback, A. Ramesh Babu'}, {'Title': 'Gate 2025 Data Science, Machine Learning & Artificial I...', 'Price': '₹1,230', 'Author': 'English, Paperback, Garg Vinit'}, {'Title': 'Data Science and Machine Learning using Python', 'Price': '₹581', 'Author': 'Paperback, Reema Thareja'}, {'Title': 'Machine Learning', 'Price': '₹482', 'Author': 'English, Paperback, Dutt Saikat'}, {'Title': 'A Brief History of Intelligence', 'Price': '₹355', 'Author': 'English, Paperback, Bennett Max'}, {'Title': 'The Hundred-Page Machine Learning Book', 'Price': '₹325', 'Author': 'English, Paperback, Burkov Andriy'}, {'Title': 'A Brief History of Intelligence', 'Price': '₹569', 'Author': 'English, Paperback, Bennett Max'}, {'Title': 'Theory of Machines', 'Price': '₹493', 'Author': 'English, Paperback, Rattan S. S.'}, {'Title': 'Machine Learning with PyTorch and Scikit-Learn', 'Price': '₹999', 'Author': 'English, Paperback, Raschka Sebastian'}, {'Title': 'How We Learn', 'Price': '₹453', 'Author': 'English, Paperback, Dehaene Stanislas'}, {'Title': 'Machine Learning', 'Price': '₹783', 'Author': 'English, Paperback, Chandra Vinod S.'}, {'Title': 'Probabilistic Machine Learning', 'Price': '₹5,854', 'Author': 'English, Hardcover, Murphy Kevin P.'}, {'Title': 'Robot Sex', 'Price': '₹1,201', 'Author': 'English, Paperback, unknown'}, {'Title': 'Machine Learning (in Python and R) for Dummies', 'Price': '₹649', 'Author': 'English, Paperback, Mueller John Paul'}, {'Title': 'Hands-On Machine Learning with Scikit-Learn, Keras, and...', 'Price': '₹1,988', 'Author': 'Paperback, Aurélien Géron'}, {'Title': 'Machine Learning', 'Price': '₹320', 'Author': 'Paperback, I. A. Dhotre'}, {'Title': 'Machine Learning for Absolute Beginners', 'Price': '₹328', 'Author': 'English, Paperback, Theobald Oliver'}, {'Title': 'Machine Learning, Second Edition | AICTE Recommended', 'Price': '₹350', 'Author': 'English, Paperback, Chopra Rajiv'}, {'Title': 'Machine Learning Models and Algorithms for Big Data Cla...', 'Price': '₹19,031', 'Author': 'English, Hardcover, Suthaharan Shan'}, {'Title': 'Machine Learning', 'Price': '₹12,489', 'Author': 'English, Hardcover, F MELLO RODRIGO'}, {'Title': 'A Brief History of Intelligence', 'Price': '₹2,144', 'Author': 'English, Hardcover, Bennett Max'}, {'Title': 'Robot Sex', 'Price': '₹3,726', 'Author': 'English, Hardcover, unknown'}, {'Title': 'Generalized Theory of Electrical Machines, Seventh Edit...', 'Price': '₹336', 'Author': 'English, Paperback, Bimbhra P.S.'}, {'Title': 'Rise of Generative AI and ChatGPT', 'Price': '₹775', 'Author': 'English, Paperback, Chakraborty Utpal'}, {'Title': 'Python Data Science Handbook', 'Price': '₹5,316', 'Author': 'English, Paperback, Vanderplas Jake'}, {'Title': 'Machine Learning for Absolute Beginners: A Plain Englis...', 'Price': '₹441', 'Author': 'Hardcover, Oliver Theobald'}, {'Title': 'MACHINE LEARNING - VEI (Special Edition)  - Machine Lea...', 'Price': '₹221', 'Author': 'Paperback, Justin Hanson'}, {'Title': 'A Brief History of Intelligence', 'Price': '₹569', 'Author': 'English, Paperback, Bennett Max'}, {'Title': 'What to Think About Machines That Think', 'Price': '₹730', 'Author': 'English, Paperback, Brockman John'}, {'Title': 'Python Artificial Intelligence Projects for Beginners', 'Price': '₹1,715', 'Author': 'English, Paperback, Eckroth Dr. Joshua'}, {'Title': 'Multisensor Fusion', 'Price': '₹24,819', 'Author': 'English, Hardcover, unknown'}, {'Title': 'Data Science and Machine Learning using Python', 'Price': '₹581', 'Author': 'Paperback, Reema Thareja'}, {'Title': 'Designing Machine Learning Systems: An Iterative Proces...', 'Price': '₹1,346', 'Author': 'Paperback, Chip Huyen'}, {'Title': 'An Introduction to Support Vector Machines and Other Ke...', 'Price': '₹6,222', 'Author': 'English, Hardcover, Cristianini Nello'}, {'Title': 'Adversarial Machine Learning', 'Price': '₹6,722', 'Author': 'English, Hardcover, Joseph Anthony D.'}]
+[2025-03-06T06:26:02.994+0000] {logging_mixin.py:190} INFO - Error generating SQL statements: 'title'
+[2025-03-06T06:26:02.995+0000] {logging_mixin.py:190} INFO - Generated 0 SQL statements.
+[2025-03-06T06:26:03.018+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='mlbooksdb_flipkart' AIRFLOW_CTX_TASK_ID='insert_book_data' AIRFLOW_CTX_EXECUTION_DATE='2025-03-06T06:08:04.475799+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-06T06:08:04.475799+00:00'
+[2025-03-06T06:26:03.020+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-06T06:26:03.021+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-06T06:26:03.022+0000] {logging_mixin.py:190} INFO - Current task name:insert_book_data state:running start_date:2025-03-06 06:26:02.853905+00:00
+[2025-03-06T06:26:03.023+0000] {logging_mixin.py:190} INFO - Dag name:mlbooksdb_flipkart and current dag run status:running
+[2025-03-06T06:26:03.023+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-06T06:26:03.024+0000] {sql.py:295} INFO - Executing: []
+[2025-03-06T06:26:03.032+0000] {base.py:84} INFO - Retrieving connection 'mlbooks_collection'
+[2025-03-06T06:26:03.036+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/operators/sql.py", line 301, in execute
+    output = hook.run(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 461, in run
+    raise ValueError("List of SQL statements is empty")
+ValueError: List of SQL statements is empty
+[2025-03-06T06:26:03.055+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-03-06T06:26:03.056+0000] {logging_mixin.py:190} INFO - Task start:2025-03-06 06:26:02.853905+00:00 end:2025-03-06 06:26:03.054688+00:00 duration:0.200783
+[2025-03-06T06:26:03.057+0000] {logging_mixin.py:190} INFO - Task:<Task(SQLExecuteQueryOperator): insert_book_data> dag:<DAG: mlbooksdb_flipkart> dagrun:<DagRun mlbooksdb_flipkart @ 2025-03-06 06:08:04.475799+00:00: manual__2025-03-06T06:08:04.475799+00:00, state:running, queued_at: 2025-03-06 06:25:57.400896+00:00. externally triggered: True>
+[2025-03-06T06:26:03.057+0000] {logging_mixin.py:190} INFO - Failure caused by List of SQL statements is empty
+[2025-03-06T06:26:03.058+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=mlbooksdb_flipkart, task_id=insert_book_data, run_id=manual__2025-03-06T06:08:04.475799+00:00, execution_date=20250306T060804, start_date=20250306T062602, end_date=20250306T062603
+[2025-03-06T06:26:03.089+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-06T06:26:03.090+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 37 for task insert_book_data (List of SQL statements is empty; 953)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/operators/sql.py", line 301, in execute
+    output = hook.run(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 461, in run
+    raise ValueError("List of SQL statements is empty")
+ValueError: List of SQL statements is empty
+[2025-03-06T06:26:03.141+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-03-06T06:26:03.177+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-06T06:26:03.180+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
