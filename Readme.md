@@ -14,6 +14,11 @@ Airflow DAG performs the following tasks:
 
 ---
 
+<p align="center">
+  <img src="(https://github.com/surenderdev/Airflow_Flipkart_MLbookspipeline/blob/main/Airflow_Flipkart_DAG.jpg)" width="350" title="hover text">
+  <img src="/Airflow_Flipkart_Postgresdb.jpg" width="350" alt="accessibility text">
+</p>
+
 ## Instructions
 
 Follow these steps to set up the project on your local machine:
