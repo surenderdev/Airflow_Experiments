@@ -14,6 +14,121 @@ DAG performs the following tasks:
 3. Inserts the fetched data into the database along with timestamp.
 
 ---
+# Project Title
+
+**A brief, catchy description of what the project does.**  
+*(Example: "An Airflow DAG for scraping book data from Flipkart and storing it in PostgreSQL.")*
+
+---
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Prerequisites](#prerequisites)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Configuration](#configuration)
+7. [Contributing](#contributing)
+8. [License](#license)
+
+---
+
+## Introduction
+
+**What is this project about?**
+Provide a high-level overview of your project, its purpose, and what problem it solves.  
+*(Example: "This project automates the scraping of book data related to machine learning from Flipkart and stores it in a PostgreSQL database for analytics.")*
+
+---
+
+## Features
+
+- **Key Feature 1**: Brief description.
+- **Key Feature 2**: Brief description.
+- **Key Feature 3**: Brief description.
+
+*(Example: "Scrapes book titles, prices, and author information; integrates with PostgreSQL for database storage; scheduled with Airflow for periodic updates.")*
+
+---
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- **Docker** (version X.X or higher)
+- **Python** (version X.X or higher, if running locally)
+- **PostgreSQL** (if not using Docker)
+
+---
+
+## Installation
+
+Follow these steps to set up the project on your local machine:
+
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/your-repo/project-name.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd project-name
+    ```
+3. Build and start the services using Docker Compose:
+    ```bash
+    docker-compose up
+    ```
+
+---
+
+## Usage
+
+### Running the Project
+1. Access the **Airflow Webserver** at: [http://localhost:8080](http://localhost:8080)  
+   **Credentials**:
+   - **Username**: `airflow`
+   - **Password**: `airflow`
+
+2. Access the **pgAdmin Webserver** at: [http://localhost:5050](http://localhost:5050)  
+   **Credentials**:
+   - **Username**: `admin@admin.com`
+   - **Password**: `root`
+
+### Inside pgAdmin
+- Create a new server and configure it:
+  - **Name**: `mlbooks_server`
+  - **Hostname**: `172.18.0.3`  
+    *(Get this from Docker container inspection: `docker container inspect <postgres-container>`)*
+    *(you may as well use Docker Destop, check containers "flipkart_booksdb-postgres-1", 
+      "postgres:13" served on port"5432:5432",  inspect tab and check for IP address)
+  - **Port**: `5432`
+  - **Database**: `postgres`
+  - **Username**: `airflow`
+  - **Password**: `airflow`
+
+- Create a new database: `mlbooks`
+
+---
+
+
+### Configure Airflow to Connect to PostgreSQL:
+1. In the Airflow Webserver, go to:
+   **Admin > Connections > Add Connection**.
+2. Fill in the following details:
+   - **Connection ID**: `mlbooks_server`
+   - **Connection Type**: `Postgres`
+   - **Host**: `172.18.0.3`
+   - **Database**: `mlbooks`
+   - **Login**: `airflow`
+   - **Password**: `airflow`
+   - **Port**: `5432`
+3. Save the connection.
+
+### Run the DAG
+1. Navigate to the **DAGs** page in Airflow.
+2. Trigger the DAG: `mlbooksdb_flipkart`.
+3. Monitor the tasks and ensure they execute successfully.
+
+---
 
 ## Core Components
 
